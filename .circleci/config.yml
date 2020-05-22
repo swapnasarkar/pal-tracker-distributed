@@ -91,6 +91,7 @@ jobs:
             mkdir -p $EXTRACT_DEST
             tar -xvzf artifacts/allocations-server-$CIRCLE_SHA1.tgz -C $EXTRACT_DEST
 
+            
       - run:
           name: Deploy
           command: |
