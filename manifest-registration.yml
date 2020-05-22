@@ -7,6 +7,10 @@ applications:
     routes:
       - route: registration-ds.cfapps.io
     path: Applications/RegistrationServer/bin/Release/netcoreapp3.1/publish
+
+    env:
+      GRANT_TYPE: client_credentials
     services:
       - tracker-registration-database
       - tracker-service-registry
+      - tracker-sso
